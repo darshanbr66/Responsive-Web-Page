@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Navbar with Hover Dropdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="task2.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Sigvitas</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+     
+      <li class="dropdown">
+        <a href="#">Services</a>
+        <div class="dropdown-content">
+          <a href="patentService.html">Patent Services</a>
+          <a href="softwareEngineeringService.html">Software Engineering Services</a>
+          <a href="dataService.html">Data Services</a>
+          <a href="usPatentService.html">US Patent Drawing & Illustration Services</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Sigvitas</h1>
+      <p>Your partner in innovative software engineering and IT solutions.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <div id="footerDiv2"><marquee direction="left"><h3>Leading global provider of consulting and technology solutions</h3></marquee></div>
+
+  
+    
+
+    <section id="Home" class="home">
+      <img src="s3.jpg" alt="Home">
+  
+    </section>
+  
+    <section id="about" class="section dark">
+      <h2><a href="patentService.html">About Us</a></h2>
+      <p>
+        At Sigvitas, we believe in delivering world-class services in the fields of patent management, software development,
+        and data engineering. Our dedicated team ensures client satisfaction and success in every project.
+      </p>
+    </section>
+  
+    <section id="patent-services" class="sectionss">
+      <h2><a href="patentService.html">Patent Services</a></h2>
+      <p>We offer comprehensive patent management services, including filing, documentation, and legal support.</p>
+    </section>
+  
+    <section id="software-services" class="section dark">
+      <h2><a href="softwareEngineeringService.html">Software Engineering Services</a></h2>
+      <p>
+        From custom software solutions to complex system integrations, we bring ideas to life with cutting-edge
+        technology.
+      </p>
+    </section>
+  
+    <section id="data-services" class="sectionss">
+      <h2><a href="dataService.html">Data Services</a></h2>
+      <p>Leverage our expertise in data analytics, visualization, and management to make informed decisions.</p>
+    </section>
+  
+    <section id="us-patent-services" class="section dark">
+      <h2><a href="usPatentService.html">US Patent Drawing & Illustration Services</a></h2>
+      <p>We create professional, detailed illustrations for patent applications in compliance with USPTO guidelines.</p>
+    </section>
+  
+
+  <section id="services" class="section dark">
+    
+      <h2><a href="">Our Services</a></h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Custom Software Development</h3>
+          <p>We design and build custom software solutions that drive business efficiency.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-chart-line"></i>
+          <h3>Data Analytics</h3>
+          <p>Transform your data into actionable insights with our analytics expertise.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Engaging, responsive websites that enhance your online presence.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-cogs"></i>
+          <h3>System Integration</h3>
+          <p>Seamlessly integrate new and existing systems for smooth operations.</p>
+        </div>
+      </div>
+    
+  </section>
+  
+  <section id="contact" class="section">
+    
+      <h2><a href="">Contact Us</a></h2>
+      <form>
+        <input type="text" id="reqName" placeholder="Your Name" required >
+        <input type="email" id="reqEmail" placeholder="Your Email" required>
+        <textarea id="textArea" placeholder="Your Message" required></textarea>
+        <button type="submit" id="submitBtn">submit</button>
+      </form>
+    
+  </section>
+  
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 IntellivisionSoft. All rights reserved.</p>
+  </footer>
+
+  <script src="task2.js"></script>
+</body>
+
+</html>
